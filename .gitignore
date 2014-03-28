@@ -164,4 +164,6 @@ pip-log.txt
 
 # node.js
 /node_modules
-/nbproject/private/
+
+# NetBeans
+/nbproject

@@ -21,7 +21,7 @@ module.exports = function(grunt) {
   // Load the plugin that provides the "cssmin" task.
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  // Default task(s).
+  // Default task(s). To run, simply CD to this directory run 'grunt' from the command line
   grunt.registerTask('default', ['cssmin']);
 
 };

@@ -101,7 +101,11 @@
    ========================================================================== */
 
 div,main,article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,pre,.nav,.nav a,.width-fill,.width-fit img,blockquote small,address,button,.button,.nav ul,.nav li,.logo {
-    display:block;*zoom:1;
+    display:block;
+}
+//For IE7 and below
+.nav,.nav a,.width-fill,.width-fit img, .button,.nav ul,.nav li,.logo {
+	*zoom:1;
 }
 
 .pipes .stat span,.menu .tiny {
@@ -116,21 +120,17 @@ audio,canvas,video,img,input,label,textarea,.menu .stat span,.icon,.label,.pipes
     display:inline-block;*display:inline;*zoom:1;
 }
 
-/* micro clearfix (using technique from http://nicolasgallagher.com/micro-clearfix-hack) */
+.row {display:block;}
+.row:before, .row:after {clear:both;}
+.row:before {content:" "; display:table;}
 
-figcaption,div:after,main:after,article:after,aside:after,details:after,figcaption:after,figure:after,footer:after,header:after,
-hgroup:after,nav:after,section:after,pre:after,.nav:after,.nav a:after,.width-fill:after,.width-fit img:after,
-blockquote small:after,address:after,.nav ul:after,.nav li:after {
-    clear:both;
-}
+.col:before, .col:after {clear:both;}
+.col:before {content:" "; display:table;}
 
-div:before,div:after,main:before,main:after,article:before,article:after,aside:before,aside:after,details:before,details:after,
-figcaption:before,figcaption:after,figure:before,figure:after,footer:before,footer:after,
-header:before,header:after,hgroup:before,hgroup:after,nav:before,nav:after,section:before,section:after,
-pre:before,pre:after,.nav:before,.nav:after,.nav a:before,.nav a:after,.width-fill:before,.width-fill:after,
-.width-fit img:before,.width-fit img:after,blockquote small:before,blockquote small:after,address:before,address:after,
-.nav ul:before,.nav ul:after,.nav li:before,.nav li:after {
-    content:" "; display:table;
+.col {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 li {
