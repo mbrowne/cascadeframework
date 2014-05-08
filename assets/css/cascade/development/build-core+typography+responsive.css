@@ -133,6 +133,8 @@ audio,canvas,video,img,input,label,textarea,.menu .stat span,.icon,.label,.pipes
   box-sizing: border-box;
 }
 
+.row, .col {*zoom:1;}
+
 li {
     display:list-item;
 }

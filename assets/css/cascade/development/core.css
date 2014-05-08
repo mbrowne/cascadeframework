@@ -130,11 +130,14 @@ audio,canvas,video,img,input,label,textarea,.menu .stat span,.icon,.label,.pipes
 */
 .row {display:block;}
 /* micro clearfix (using technique from http://nicolasgallagher.com/micro-clearfix-hack) */
-.row:before, .row:after {clear:both;}
-.row:before {content:" "; display:table;}
+.row:before, .row:after {content:" "; display:table;}
+.row:after {clear:both;}
 
-.col:before, .col:after {clear:both;}
-.col:before {content:" "; display:table;}
+.col:before, .col:after {content:" "; display:table;}
+.col:after {clear:both;}
+
+//For IE7 and below
+.row, .col {*zoom:1;}
 
 /* Use border-box sizing for columns so that padding can be added.
    Note: Don't add padding if you want to maintain compatibility with IE7.

@@ -118,17 +118,19 @@ audio,canvas,video,img,input,label,textarea,.menu .stat span,.icon,.label,.pipes
 }
 
 .row {display:block;}
-.row:before, .row:after {clear:both;}
-.row:before {content:" "; display:table;}
+.row:before, .row:after {content:" "; display:table;}
+.row:after {clear:both;}
 
-.col:before, .col:after {clear:both;}
-.col:before {content:" "; display:table;}
+.col:before, .col:after {content:" "; display:table;}
+.col:after {clear:both;}
 
 .col {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.row, .col {*zoom:1;}
 
 li {
     display:list-item;
